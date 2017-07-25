@@ -1,0 +1,36 @@
+
+<% include partials/header %>
+	<h1><%=title %></h1>
+    <h3>Add User</h3>
+
+    <% if(errors != undefined){  %>
+    	<ul>
+    		<% errors.forEach(function(error){ %>
+    			<li><%= error.msg %> </li>
+    		<% }) %>
+    	</ul>
+
+    <% } %>
+
+    <form method="POST" action="user/add">
+	    <label> First Name  </label>
+	    <input type="text" name="name">
+	    <br>
+
+	    <label> Age  </label>
+	    <input type="text" name="age">
+	    <br>
+	    <br>
+	    <input type="submit" value="Submit">
+    </form>
+
+
+	<ul>
+		<% userArr.forEach(function(user){ %>
+			<li> 
+				<%= user.name %> ==> <%= user.age %>
+			</li>
+		<%})%>
+	</ul>
+<% include partials/footer %>
+	
