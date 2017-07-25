@@ -1,0 +1,17 @@
+{
+  "name": "customer_app",
+  "version": "1.0.0",
+  "description": "Simple customer management app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nishi Bangar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.6",
+    "express": "*",
+    "express-validator": "^2.20.8"
+  }
+}
