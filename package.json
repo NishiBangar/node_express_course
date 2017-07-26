@@ -12,6 +12,7 @@
     "body-parser": "*",
     "ejs": "^2.5.6",
     "express": "*",
-    "express-validator": "^2.20.8"
+    "express-validator": "^2.20.8",
+    "mongojs": "^2.4.0"
   }
 }
