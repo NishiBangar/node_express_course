@@ -1,4 +1,3 @@
-
 <% include partials/header %>
 	<h1><%=title %></h1>
     <h3>Add User</h3>
@@ -16,9 +15,13 @@
 	    <label> First Name  </label>
 	    <input type="text" name="name">
 	    <br>
+	    <br>
 
 	    <label> Age  </label>
-	    <input type="text" name="age">
+	    &nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;&nbsp;
+	    &nbsp;&nbsp;
+	    <input type="text" name="age"> 
 	    <br>
 	    <br>
 	    <input type="submit" value="Submit">
@@ -28,7 +31,7 @@
 	<ul>
 		<% userArr.forEach(function(user){ %>
 			<li> 
-				<%= user.name %> ==> <%= user.age %>
+				<%= user.name %> ==> <%= user.age %> - <a href="#" class="deleteUser" data-id="<%= user._id%>">Delete</a>
 			</li>
 		<%})%>
 	</ul>
